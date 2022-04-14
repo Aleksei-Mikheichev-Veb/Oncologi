@@ -1,0 +1,27 @@
+{
+    "remotePath": "./www/doktoronko.com",
+    "host": "reg.ru",
+    "username": "zorg.84@mail.ru",
+    "password": "19840414aAa",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ".php, .js, .css, .html, .jpg, .png, .gif, .wepb, .md, .json, .lock "
+        ],
+        "path": ""
+    }
+}

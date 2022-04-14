@@ -1,0 +1,136 @@
+.footer {
+    margin: 80px 0 20px;
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.25;
+        transition: all 0.8s ease .3s;
+        transform: translate(0, 100%);
+        opacity: 0;
+
+        &._active {
+            transform: translate(0, 0%);
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin: 30px 0 20px;
+
+        &__text {
+            transform: translate(0, 50%);
+        }
+    }
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+}
+
+.footer__left {}
+
+.footer__left {}
+
+.footer__left-title,
+.footer__left-schedule,
+.footer__left-phone a,
+.footer__left-phone a,
+.footer__phone-link,
+.footer__left-messengers,
+.footer__left-skype a,
+.footer__left-gmail a {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__left-title,
+.footer__left-schedule,
+.footer__left-phone,
+.footer__left-phone,
+.footer__phone-link,
+.footer__left-messengers,
+.footer__left-skype,
+.footer__left-gmail {
+    text-align: center;
+}
+
+.footer__left-schedule {
+    margin: 10px 0px 0px 0px;
+    line-height: 22px;
+}
+
+.footer__left-icon {
+    display: inline;
+}
+
+.footer__left-skype,
+.footer__left-gmail {
+    margin: 10px auto 0px;
+    width: 100%;
+}
+
+
+.footer__right-address {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (max-width: 500px) {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.footer__right-image {
+    text-align: center;
+}
+
+.footer__right-img {
+    margin: 30px 0px 0px 0px;
+    max-width: 300px;
+}
+
+.social {
+    padding-top: 100px;
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    &__item {
+        width: 60px;
+        height: 60px;
+        margin: 0px 0px 20px 0px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__link img {
+        width: 100%;
+    }
+
+    @media(max-width:400px) {
+
+        padding-top: 50px;
+    }
+}
