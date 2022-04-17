@@ -1083,6 +1083,138 @@ a.icon-blue {
           flex: 0 1 300px;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.table__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 0px;
+}
+
+.table__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .table__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.table__price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .table__price {
+    font-size: 12px;
+    line-height: 14px;
+    width: 120px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .table__price {
+    width: 100px;
+  }
+}
+
+.table .table__item-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.table__box-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.table__box-name {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  .table__box-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.table__box-price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .table__box-price {
+    font-size: 12px;
+    line-height: 14px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 120px;
+            flex: 0 0 120px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .table__box-price {
+    width: 100px;
+  }
+}
+
 .footer {
   margin: 80px 0 20px;
 }
