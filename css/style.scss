@@ -788,6 +788,21 @@ a.sidebar__link {
     background-color: rgba(255, 255, 255, 0);
 }
 
+#popup-consultation .form__text {
+    font-size: 17px;
+    margin: 0 0px 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#popup-consultation .form__text-last {
+    margin: 0 0px 0px;
+}
+
+// .form__textarea {
+//     margin: 10 0px 10px;
+// }
+
 .form__text._error {
     box-shadow: 0 0 15px red;
 }

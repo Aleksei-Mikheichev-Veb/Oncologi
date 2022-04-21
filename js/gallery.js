@@ -144,37 +144,188 @@ let myImageSlider = new Swiper('.image-slider', {
     },
 
 
-    // Отключить предзагрузка картинок
-    preloadImages: false,
-    // Lazy Loading
-    // (подгрузка картинок)
-    lazy: {
-        // Подгружать на старте
-        // переключения слайда
-        loadOnTransitionStart: false,
-        // Подгрузить предыдущую
-        // и следующую картинки
-        loadPrevNext: false,
-    },
-    // Слежка за видимыми слайдами
-    watchSlidesProgress: false,
-    // Добавление класса видимым слайдам
-    watchSlidesVisibility: true,
-
-
-    // Обновить свайпер
-    // при изменении элементов слайдера
-    observer: true,
-
-    // Обновить свайпер
-    // при изменении родительских
-    // элементов слайдера
-    observeParents: true,
-
-    // Обновить свайпер
-    // при изменении дочерних
-    // элементов слайда
-    observeSlideChildren: true,
 
 });
 
+// Инициализируем Swiper
+let myImageSlider2 = new Swiper('.image-slider-2', {
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next-2',
+        prevEl: '.swiper-button-prev-2'
+    },
+
+    // Включение/отключение
+    // перетаскивания на ПК
+    simulateTouch: true,
+    // Чувствительность свайпа
+    touchRatio: 1,
+    // Угол срабатывания свайпа/перетаскивания
+    touchAngle: 45,
+    // Курсор перетаскивания
+    grabCursor: true,
+
+    // Переключение при клике на слайд
+    slideToClickedSlide: false,
+
+    // Навигация по хешу
+    hashNavigation: {
+        // Отслеживать состояние
+        watchState: true,
+    },
+    // Автовысота
+    autoHeight: false,
+
+    // Количество слайдов для показа
+    slidesPerView: 6,
+
+    // Отключение функционала
+    // если слайдов меньше чем нужно
+    watchOverflow: false,
+
+    // Отступ между слайдами
+    spaceBetween: 10,
+
+    // Количество пролистываемых слайдов
+    slidesPerGroup: 1,
+
+    // Активный слайд по центру
+    centeredSlides: false,
+
+    // Стартовый слайд.
+    initialSlide: 0,
+
+    // Мультирядность
+    slidesPerColumn: 1,
+
+    // Бесконечный слайдер
+    loop: true,
+
+    // Кол-во дублирующих слайдов
+    loopedSlides: 0,
+
+    // Свободный режим
+    freeMode: true,
+
+    // Скорость
+    speed: 800,
+
+    // Эффекты переключения слайдов.
+    // Листание
+    effect: 'slide',
+
+
+
+    // Брейк поинты (адаптив)
+    // Ширина экрана
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        430: {
+            slidesPerView: 2,
+        },
+        650: {
+            slidesPerView: 3,
+        },
+        1100: {
+            slidesPerView: 4,
+        },
+        1300: {
+            slidesPerView: 6,
+        }
+    },
+});
+
+// Инициализируем Swiper
+let myImageSlider3 = new Swiper('.image-slider-3', {
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next-3',
+        prevEl: '.swiper-button-prev-3'
+    },
+
+    // Включение/отключение
+    // перетаскивания на ПК
+    simulateTouch: true,
+    // Чувствительность свайпа
+    touchRatio: 1,
+    // Угол срабатывания свайпа/перетаскивания
+    touchAngle: 45,
+    // Курсор перетаскивания
+    grabCursor: true,
+
+    // Переключение при клике на слайд
+    slideToClickedSlide: false,
+
+    // Навигация по хешу
+    hashNavigation: {
+        // Отслеживать состояние
+        watchState: true,
+    },
+    // Автовысота
+    autoHeight: false,
+
+    // Количество слайдов для показа
+    slidesPerView: 6,
+
+    // Отключение функционала
+    // если слайдов меньше чем нужно
+    watchOverflow: false,
+
+    // Отступ между слайдами
+    spaceBetween: 10,
+
+    // Количество пролистываемых слайдов
+    slidesPerGroup: 1,
+
+    // Активный слайд по центру
+    centeredSlides: false,
+
+    // Стартовый слайд.
+    initialSlide: 0,
+
+    // Мультирядность
+    slidesPerColumn: 1,
+
+    // Бесконечный слайдер
+    loop: true,
+
+    // Кол-во дублирующих слайдов
+    loopedSlides: 0,
+
+    // Свободный режим
+    freeMode: true,
+
+    // Скорость
+    speed: 800,
+
+    // Эффекты переключения слайдов.
+    // Листание
+    effect: 'slide',
+
+
+
+    // Брейк поинты (адаптив)
+    // Ширина экрана
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        430: {
+            slidesPerView: 2,
+        },
+        650: {
+            slidesPerView: 3,
+        },
+        1100: {
+            slidesPerView: 4,
+        },
+        1300: {
+            slidesPerView: 6,
+        }
+    },
+
+
+
+});

@@ -268,8 +268,9 @@
         }
 
         /* Нажатый бургер */
-        &_active span {
+        &._active span {
             transform: scale(0) translate(0px, -50%);
+            display: none;
         }
 
         &._active::before {

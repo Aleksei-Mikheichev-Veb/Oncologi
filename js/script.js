@@ -133,13 +133,14 @@ document.addEventListener('DOMContentLoaded', function () {
             let formData = new FormData(form);
 
             if (error === 0) {
-                const subscription = document.querySelector('.subscription');
+                // const subscription = document.querySelector('.subscription');
                 let body = document.querySelector('.popup.open .popup__body');
                 if (body == true) {
                     body.classList.add('_sending');
-                } else {
-                    subscription.classList.add('_sending');
                 }
+                // else {
+                //     subscription.classList.add('_sending');
+                // }
 
                 let response = await fetch('sendmail.php', {
                     method: 'POST',
@@ -152,9 +153,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     form.reset();
                     if (body == true) {
                         body.classList.remove('_sending');
-                    } else {
-                        subscription.classList.remove('_sending');
                     }
+                    // else {
+                    //     subscription.classList.remove('_sending');
+                    // }
                     popupActiveCloses.forEach(popupActiveClose => {
                         console.log(popupActiveClose);
                         popupActiveClose.classList.remove('open');
@@ -355,3 +357,20 @@ window.addEventListener('click', function (e) {
 // function CityChange() {
 //     document.getElementById('adress').innerHTML = document.getElementById(document.getElementById('city').value).innerHTML
 // }
+
+
+//Аккордион
+let accordionItems = document.querySelectorAll('.accordion__item');
+accordionItems.forEach(item => {
+
+    item.addEventListener("click", function (e) {
+        let content = item.querySelector('.accordion__item-content');
+        console.log(content);
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            console.log(item);
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    })
+})

@@ -16,20 +16,20 @@
 	 $mail->setLanguage('ru', 'phpmailer/language/');
 	 $mail->IsHTML(true);
 
-     $mail->Host = 'mail.hosting.reg.ru';
-	 $mail->Port = 465;
-	 $mail->Username = 'info@doktoronko.com';
-	 $mail->Password = '19840414aAa';
-	
-    //  $mail->Host = 'smtp.gmail.com';
+    //  $mail->Host = 'mail.hosting.reg.ru';
 	//  $mail->Port = 465;
-	//  $mail->Username = 'aleksejmiheicev61834@gmail.com';
-	//  $mail->Password = 'mixei5063757';
+	//  $mail->Username = 'info@doktoronko.com';
+	//  $mail->Password = '19840414aAa';
+	
+     $mail->Host = 'smtp.gmail.com';
+	 $mail->Port = 465;
+	 $mail->Username = 'aleksejmiheicev61834@gmail.com';
+	 $mail->Password = 'mixei5063757';
 	//От кого письмо
 	$mail->setFrom('info@doktoronko.com');
 	//Кому отправить
 	$mail->addAddress('gluk-90@list.ru');
-	$mail->addAddress('info@doktoronko.com');
+	// $mail->addAddress('info@doktoronko.com');
 	 //Тема письма
      $mail->Subject = 'Письмо с моего сайта';
 
