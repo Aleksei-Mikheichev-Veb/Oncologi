@@ -70,12 +70,13 @@
     &__image {
         text-align: center;
         margin: 0px 0px 5px 0px;
+        width: 100%;
     }
 
     // .articles__img
 
     &__img {
-        max-width: 500px;
+        max-width: 100%;
     }
 
     // .articles__images
