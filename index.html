@@ -2143,15 +2143,17 @@
                 <div class="popup__content">
                     <div class="popup__bg"></div>
                     <a href="" class="popup__close close-popup"><span class='close'></span></a>
-                    <div class="popup__title">Заказать товар</div>
+                    <div class="popup__title">Написать мне</div>
                     <div class="popup__forms ">
                         <form action="#" id='form' class='forms'>
                             <div class="forms__row">
                                 <input type="text" name="name" class="form__text" placeholder="Ваше имя:">
-                                <input type="tel" name="phone" id='phone' class="form__text _req"
-                                    placeholder="Ваш телефон:">
-                                <input type="email" name="email" class="form__text _email "
+                                <input type="text" name="city" class="form__text" placeholder="Город:">
+                                <input type="email" name="email" class="form__text _email _req "
                                     placeholder="Ваша электронная почта:">
+                                <input type="text" name="skype" class="form__text form__text-last" placeholder="Skype:">
+                                <div class="form__textarea">Опишите проблему</div>
+                                <textarea name="description" id=""></textarea>
                                 <!-- Передать данные для Конкретного инпуста в value передаем данные в письмо -->
                                 <input type="hidden" name="which" id="datePage" value="хочу заказать товар">
                             </div>

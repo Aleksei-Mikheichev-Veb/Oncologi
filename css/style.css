@@ -2735,12 +2735,14 @@ a.sidebar__link:hover {
           transform: rotate(-45deg);
 }
 
-#popup-consultation .popup.open {
+#popup-consultation .popup.open,
+#popup-write .popup.open {
   opacity: 1;
   visibility: visible;
 }
 
-#popup-consultation.popup.open .popup__content {
+#popup-consultation.popup.open .popup__content,
+#popup-write.popup.open .popup__content {
   -webkit-transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
           transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
   opacity: 1;
@@ -2748,7 +2750,7 @@ a.sidebar__link:hover {
 
 #popup-consultation .popup__content {
   max-width: 600px;
-  height: 400px;
+  height: 500px;
   color: #000;
   padding: 30px;
   position: relative;
@@ -2772,15 +2774,55 @@ a.sidebar__link:hover {
           transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
-#popup-consultation .forms__row {
+@media (max-width: 416px) {
+  #popup-consultation .popup__content {
+    height: 450px;
+  }
+}
+
+#popup-consultation .forms__row,
+#popup-write .forms__row {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#popup-consultation .popup__forms {
+#popup-consultation .popup__forms,
+#popup-write .popup__forms {
   width: 100%;
+}
+
+#popup-write .popup__content {
+  width: 600px;
+  height: 450px;
+  color: #000;
+  padding: 30px;
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+          transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+@media (max-width: 416px) {
+  #popup-write .popup__content {
+    height: 450px;
+  }
 }
 
 .popup__body {
@@ -2833,20 +2875,32 @@ a.sidebar__link:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
-#popup-consultation .form__text {
+#popup-consultation .popup__title,
+#popup-write .popup__title {
+  margin: 0px 0px 0.5em 0px;
+}
+
+#popup-consultation .form__text,
+#popup-write .form__text {
   font-size: 17px;
   margin: 0 0px 20px;
   color: white;
   background-color: rgba(255, 255, 255, 0);
 }
 
-#popup-consultation .form__text-last {
+#popup-consultation .form__text-last,
+#popup-write .form__text-last {
   margin: 0 0px 0px;
 }
 
 .form__textarea {
   margin: 10px 0px 10px;
   color: #fff;
+}
+
+textarea {
+  margin: 0px 0px 15px 0px;
+  font-size: 18px;
 }
 
 .form__text._error {
