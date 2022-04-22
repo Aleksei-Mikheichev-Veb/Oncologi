@@ -149,6 +149,7 @@ a.sidebar__link {
     left: 0;
     width: 100%;
     height: 100%;
+    // z-index: -5;
     background: url(../img/hand.webp) center 40% / cover no-repeat;
     filter: brightness(50%);
 }
@@ -160,7 +161,7 @@ a.sidebar__link {
 
 .achievements__title-title {
     color: #fff;
-    z-index: -1;
+    z-index: 0;
 }
 
 .title {

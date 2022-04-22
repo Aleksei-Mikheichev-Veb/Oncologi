@@ -2063,7 +2063,7 @@ a.sidebar__link:hover {
 
 .achievements__title-title {
   color: #fff;
-  z-index: -1;
+  z-index: 0;
 }
 
 .title {
