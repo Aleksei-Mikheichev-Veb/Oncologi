@@ -14,7 +14,16 @@ buttonBottom.addEventListener("click", function (e) {
     buttonBottom.classList.toggle('_active');
     menuBottom.classList.toggle('_active');
 });
-
+//Закрываем меню по нажатию на пункт меню с попапами
+window.addEventListener('click', menuPopupClose);
+function menuPopupClose(e) {
+    console.log(e.target);
+    if (e.target.classList.contains('menu__popup')) {
+        console.log('yes');
+        button.classList.remove('_active');
+        menu.classList.remove('_active');
+    }
+}
 // Прокрутка при клике
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {

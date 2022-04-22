@@ -11,6 +11,7 @@ $color1: #098C02;
 @import "_documents.scss";
 @import "_contract.scss";
 @import "_delivery.scss";
+@import "_contact.scss";
 @import "_footer.scss";
 
 
@@ -299,6 +300,7 @@ a.sidebar__link {
     height: 50px;
     // background: red;
     position: absolute;
+    cursor: pointer;
 }
 
 .swiper-button-prev-2,

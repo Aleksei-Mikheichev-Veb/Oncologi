@@ -1,0 +1,10 @@
+.contact__title {
+    font-size: 44px;
+    margin: 20px 0px 0px 0px;
+    color: $color1;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        font-size: 34px;
+    }
+}

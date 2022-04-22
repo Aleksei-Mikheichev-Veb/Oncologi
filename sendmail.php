@@ -44,6 +44,18 @@
 	 if(trim(!empty($_POST['name']))){
 	 	$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
 	 }
+     if(trim(!empty($_POST['city']))){
+        $body.='<p><strong>Город:</strong> '.$_POST['city'].'</p>';
+    }
+    if(trim(!empty($_POST['whatsapp']))){
+        $body.='<p><strong>Whatsapp:</strong> '.$_POST['whatsapp'].'</p>';
+    }
+    if(trim(!empty($_POST['viber']))){
+        $body.='<p><strong>Viber:</strong> '.$_POST['viber'].'</p>';
+    }
+    if(trim(!empty($_POST['skype']))){
+        $body.='<p><strong>Skype:</strong> '.$_POST['skype'].'</p>';
+    }
 	 if(trim(!empty($_POST['phone']))){
 	 	$body.='<p><strong>Телефон:</strong> '.$_POST['phone'].'</p>';
 	 }

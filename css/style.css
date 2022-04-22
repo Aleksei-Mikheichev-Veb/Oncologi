@@ -1007,6 +1007,10 @@ a.icon-blue {
   }
 }
 
+.articles {
+  margin: 70px 0px 0px 0px;
+}
+
 .articles__title {
   font-size: 24px;
   font-weight: bold;
@@ -1728,6 +1732,19 @@ a.delivery__link {
   color: black;
 }
 
+.contact__title {
+  font-size: 44px;
+  margin: 20px 0px 0px 0px;
+  color: #098C02;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .contact__title {
+    font-size: 34px;
+  }
+}
+
 .footer {
   margin: 80px 0 20px;
 }
@@ -1892,6 +1909,10 @@ a.delivery__link {
   .social {
     padding-top: 50px;
   }
+}
+
+.rutube {
+  width: 50px;
 }
 
 .header, .header-bottom, .hi__item, .assortiment a.assortiment__link {
@@ -2196,6 +2217,7 @@ a.sidebar__link:hover {
   width: 50px;
   height: 50px;
   position: absolute;
+  cursor: pointer;
 }
 
 .swiper-button-prev-2,

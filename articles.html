@@ -2,17 +2,13 @@
 <html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Статьи</title>
-
-        <!-- Swiper -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
     <div class="wrapper">
@@ -28,20 +24,24 @@
                                 <ul class="menu__list">
                                     <li><a href="index.html" class="menu__link">Главная</a>
                                     </li>
-                                    <li><a data-goto=".page__section_2" href="#" class="menu__link">Записаться на
+                                    <li><a href="#popup-consultation"
+                                            class="fullscreen__link popup__link assortiment__link menu__link menu__popup">Записаться
+                                            на
                                             консультацию</a>
                                     </li>
-                                    <li><a data-goto=".product" href="#" class="menu__link">Обо мне</a>
+                                    <li><a href="about.html" class="menu__link">Обо мне</a>
                                     </li>
                                     <li><a href="products.html" class="menu__link">Каталог</a>
                                     </li>
-                                    <li><a data-goto=".page__section_3" href="#" class="menu__link">Вопросы и ответы</a>
+                                    <li><a href="questions.html" class="menu__link">Вопросы и ответы</a>
                                     </li>
-                                    <li><a data-goto=".page__section_3" href="#" class="menu__link">Отзывы</a>
+                                    <li><a href="reviews.html" class="menu__link">Отзывы</a>
                                     </li>
-                                    <li><a data-goto=".decision" href="#" class="menu__link">Написать мне</a>
+                                    <li><a href="#popup-write"
+                                            class="fullscreen__link popup__link assortiment__link menu__link menu__popup">Написать
+                                            мне</a>
                                     </li>
-                                    <li><a data-goto=".decision" href="#" class="menu__link">Важно</a>
+                                    <li><a href="important.html" class="menu__link">Важно</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -54,8 +54,8 @@
                     <div class="hi__logo _anim-items _anim-no-hide"><img src="img/logo.webp" alt="Логотип"></div>
                     <div class="hi__menu _anim-items _anim-no-hide">
                         <div class="hi__bottom-title">
-                            <div class="hi__title _anim-items _anim-no-hide">МЕЖДУНАРОДНЫЙ ОНКОЛОГИЧЕСКИЙ ЦЕНТР ДМИТРИЯ
-                                ХРИСТОЛЮБОВА</div>
+                            <h1 class="hi__title _anim-items _anim-no-hide">МЕЖДУНАРОДНЫЙ ОНКОЛОГИЧЕСКИЙ ЦЕНТР ДМИТРИЯ
+                                ХРИСТОЛЮБОВА</h1>
                             <div class="hi__subtitle _anim-items _anim-no-hide">ЛЕЧЕНИЕ ОНКОЛОГИИ МЕТОДОМ ФУНГОТЕРАПИИ,
                                 ЭНИО-МЕДИЦИНЫ(БИОЛОКАЦИИ) И ДУХОВНОГО ЦЕЛИТЕЛЬСТВА
                             </div>
@@ -117,17 +117,17 @@
                         </div>
                         <nav class="menu__body menu__body-bottom">
                             <ul class="menu__list">
-                                <li><a data-goto=".page__section_1" href="#" class="menu__link">Договор оферты</a>
+                                <li><a href="contract.html" class="menu__link">Договор оферты</a>
                                 </li>
                                 <li><a href="price.html" class="menu__link">Общий прайс цен</a>
                                 </li>
-                                <li><a data-goto=".product" href="#" class="menu__link">Оплата и доставка</a>
+                                <li><a href="delivery.html" class="menu__link">Оплата и доставка</a>
                                 </li>
                                 <li><a href="documents.html" class="menu__link">Документы</a>
                                 </li>
                                 <li><a href="articles.html" class="menu__link">Статьи</a>
                                 </li>
-                                <li><a data-goto=".page__section_3" href="#" class="menu__link">Контакты</a>
+                                <li><a href="contact.html" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -10605,9 +10605,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
                 <section class="social">
                     <div class="title _anim-items _anim-no-hide anim-bottom">
                         <div class="title__box">
@@ -10634,6 +10631,12 @@
                             <a href="https://www.youtube.com/channel/UC2ULHY5y8uvWvAZ7kd8dOxg"
                                 class="social__link icon">
                                 <img src="img/icon/youtube.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="social__item rutube">
+                            <a href="https://www.youtube.com/channel/UC2ULHY5y8uvWvAZ7kd8dOxg"
+                                class="social__link icon">
+                                <img src="img/icon/rutube.webp" alt="">
                             </a>
                         </div>
                         <div class="social__item ok">
@@ -10672,6 +10675,58 @@
                     заниматься лечебной деятельностью.</div>
             </div>
         </footer>
+        <div id="popup-consultation" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__bg"></div>
+                    <a href="" class="popup__close close-popup"><span class='close'></span></a>
+                    <div class="popup__title">Запись на консультацию</div>
+                    <div class="popup__forms ">
+                        <form action="#" id='form' class='forms'>
+                            <div class="forms__row">
+                                <input type="text" name="name" class="form__text" placeholder="ФИО:">
+                                <input type="text" name="city" class="form__text" placeholder="Город:">
+                                <input type="tel" name="phone" id='phone' class="form__text _req"
+                                    placeholder="Ваш телефон:">
+                                <input type="text" name="whatsapp" class="form__text" placeholder="Whatsapp:">
+                                <input type="text" name="viber" class="form__text" placeholder="Viber:">
+                                <input type="text" name="skype" class="form__text form__text-last" placeholder="Skype:">
+                                <div class="form__textarea">Опишите проблему</div>
+                                <textarea name="message" id=""></textarea>
+                                <!-- Передать данные для Конкретного инпуста в value передаем данные в письмо -->
+                                <input type="hidden" name="which" id="datePage" value="Хочу записаться на консультацию">
+                            </div>
+                            <button type="submit" class="form__submit form__button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup-write" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__bg"></div>
+                    <a href="" class="popup__close close-popup"><span class='close'></span></a>
+                    <div class="popup__title">Написать мне</div>
+                    <div class="popup__forms ">
+                        <form action="#" id='form' class='forms'>
+                            <div class="forms__row">
+                                <input type="text" name="name" class="form__text" placeholder="Ваше имя:">
+                                <input type="text" name="city" class="form__text" placeholder="Город:">
+                                <input type="email" name="email" class="form__text _email _req "
+                                    placeholder="Ваша электронная почта:">
+                                <input type="text" name="skype" class="form__text form__text-last" placeholder="Skype:">
+                                <div class="form__textarea">Опишите проблему</div>
+                                <textarea name="message" id=""></textarea>
+                                <!-- Передать данные для Конкретного инпуста в value передаем данные в письмо -->
+                                <!-- <input type="hidden" name="which" id="datePage" value="хочу заказать товар"> -->
+                            </div>
+                            <button type="submit" class="form__submit form__button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
